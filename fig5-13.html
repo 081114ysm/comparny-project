@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 응용 1</title>
+    <style>
+        td, th{
+            height: 20px;
+            width: 100px;
+            padding: 10px;
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        thead, tfoot {
+            background: darkgrey;
+            color: yellow;
+        }
+        tbody tr:nth-child(even) {
+            background: aliceblue;
+        }
+        tbody tr:hover {
+            background: rgb(255, 232, 236);
+        }
+    </style>
+</head>
+<body>
+    <h3>2022년 1학기 성적</h3>
+    <hr>
+    <table>
+        <thead>
+            <tr><th>이름</th><th>HTML</th><th>CSS3</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th>합</th><th>310</th><th>249</th></tr>
+        </tfoot>
+        <tbody>
+            <tr><th>황기태</th><th>80</th><th>70</th></tr>
+            <tr><th>이재문</th><th>95</th><th>99</th></tr>
+        </tbody>
+        <tbody>
+            <tr><th>이병은</th><th>85</th><th>90</th></tr>
+            <tr><th>김남윤</th><th>50</th><th>40</th></tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트 그림자</title>
+    <style>
+        .blurbox{box-shadow: 10px 10px 5px skyblue;}
+        .redbox {box-shadow: 10px 10px red ;}
+        .multiEffect{
+            box-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+        div{
+            width: 150px;
+            height: 70px;
+            padding: 10px;
+            border: 10px solid lightblue;
+            background-image: url("media/spongebob.png");
+            background-size: 150px 100px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h3>박스 그림자 만들기</h3>
+    <hr>
+    <div class="redbox">ABCDE</div>
+    <div class="blurbox">ABCDE</div>
+    <div class="multiEffect">ABCDE</div>
+</body>
+</html>
